@@ -11,12 +11,12 @@ import "./ERC20Detailed.sol";
  * Note they can later distribute these tokens as they wish using `transfer` and other
  * `ERC20` functions.
  */
-contract Token is ERC20, ERC20Detailed {
+contract FeastXPG is ERC20, ERC20Detailed {
 
     /**
      * @dev Constructor that gives msg.sender all of existing tokens.
      */
-    constructor () public ERC20Detailed("DDTcoin", "DDT", 18) {
-        _mint(msg.sender, 100000000 * (10 ** uint256(decimals())));
+    constructor () public ERC20Detailed("Little Apple", "XPG", 8) {
+        _mint(msg.sender, 2100000 * (10 ** uint256(decimals())));
     }
 }
